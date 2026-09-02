@@ -1,0 +1,45 @@
+Airline Passenger Satisfaction - Model Evaluation Report
+============================================================
+Train size: 2800 | Test size: 700
+Number of features: 27
+
+----- Logistic Regression -----
+Accuracy : 0.7657
+Precision: 0.7636
+Recall   : 0.7456
+F1 Score : 0.7545
+                         precision    recall  f1-score   support
+
+neutral or dissatisfied       0.77      0.78      0.78       362
+              satisfied       0.76      0.75      0.75       338
+
+               accuracy                           0.77       700
+              macro avg       0.77      0.77      0.77       700
+           weighted avg       0.77      0.77      0.77       700
+
+----- Random Forest -----
+Accuracy : 0.7686
+Precision: 0.7651
+Recall   : 0.7515
+F1 Score : 0.7582
+                         precision    recall  f1-score   support
+
+neutral or dissatisfied       0.77      0.78      0.78       362
+              satisfied       0.77      0.75      0.76       338
+
+               accuracy                           0.77       700
+              macro avg       0.77      0.77      0.77       700
+           weighted avg       0.77      0.77      0.77       700
+
+
+Top 10 Random Forest Feature Importances:
+Avg Service Rating            0.167688
+Inflight wifi service         0.072083
+Online boarding               0.063909
+Cleanliness                   0.054138
+Flight Distance               0.053049
+Total Delay in Minutes        0.048495
+Age                           0.047617
+Leg room service              0.041580
+Arrival Delay in Minutes      0.041527
+Departure Delay in Minutes    0.041478
